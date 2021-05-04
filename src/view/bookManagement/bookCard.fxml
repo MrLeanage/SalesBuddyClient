@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.bookManagement.BookCardController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="14.0" prefHeight="152.0" prefWidth="671.0" style="-fx-background-color: #006a9f;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="500.0" layoutX="10.0" layoutY="10.0" stroke="#006a9f" strokeType="INSIDE" strokeWidth="5.0" width="690.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <Label layoutX="50.0" layoutY="179.0" prefHeight="21.0" prefWidth="200.0" text="Book Description :" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="317.0" prefHeight="21.0" prefWidth="200.0" text="Language :" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="400.0" prefHeight="28.0" prefWidth="222.0" text="Book Availability Status :" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="362.0" prefHeight="21.0" prefWidth="200.0" text="Publisher and Year :" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="availableStatusTextField" editable="false" layoutX="289.0" layoutY="395.0" prefHeight="31.0" prefWidth="367.0" />
+      <TextField fx:id="publisherYearTextField" editable="false" layoutX="289.0" layoutY="356.0" prefHeight="31.0" prefWidth="367.0" />
+      <Label fx:id="bookNameLabel" layoutX="13.0" layoutY="27.0" prefHeight="63.0" prefWidth="671.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="languageTextField" editable="false" layoutX="289.0" layoutY="315.0" prefHeight="31.0" prefWidth="367.0" />
+      <Label fx:id="authorLabel" layoutX="15.0" layoutY="78.0" prefHeight="63.0" prefWidth="671.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Calibri Italic" size="20.0" />
+         </font>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </Label>
+      <JFXButton fx:id="closeCardButton" cancelButton="true" layoutX="561.0" layoutY="462.0" onAction="#closeCard" style="-fx-background-color: #ff0000;" text="Close Card" textFill="WHITE" AnchorPane.leftAnchor="551.0" AnchorPane.topAnchor="452.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" />
+         </graphic>
+      </JFXButton>
+      <TextArea fx:id="desriptionTextField" editable="false" layoutX="289.0" layoutY="181.0" prefHeight="123.0" prefWidth="367.0" />
+   </children>
+</AnchorPane>
